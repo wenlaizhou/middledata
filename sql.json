@@ -1,0 +1,14 @@
+{
+  "server_count": {
+    "sql": "select count(*) from server where status = 0;",
+    "service": "bigtree"
+  },
+  "tc_server_count": {
+    "sql": "select count(*) from server where status = 0 and cloudType = 'TC';",
+    "service": "bigtree"
+  },
+  "uc_server_count": {
+    "sql": "select count(*) from server where status = 0 and cloudType = 'UC';",
+    "service": "bigtree"
+  }
+}
