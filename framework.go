@@ -69,6 +69,7 @@ func Start(configPath string) {
 				err = rows.Scan(&x)
 				value = fmt.Sprintf("%s", x)
 			}
+			rows.Close()
 			metricsData := middleware.MetricsData{
 				Key:   k,
 				Value: value,
