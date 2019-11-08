@@ -10,5 +10,25 @@
   "uc_server_count": {
     "sql": "select count(*) from server where status = 0 and cloudType = 'UC';",
     "service": "bigtree"
+  },
+  "randA": {
+    "sql": "select count(*) from server where status = 0 and cloudType = 'UC';",
+    "service": "bigtree"
+  },
+  "randB": {
+    "sql": "select round(rand() * 100);",
+    "service": "bigtree"
+  },
+  "randC": {
+    "sql": "select round(rand() * 100);",
+    "service": "bigtree"
+  },
+  "randD": {
+    "sql": "select round(rand() * 100);",
+    "service": "bigtree"
+  },
+  "randE": {
+    "sql": "select round(rand() * 100);",
+    "service": "bigtree"
   }
 }
