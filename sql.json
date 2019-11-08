@@ -4,15 +4,15 @@
     "service": "bigtree"
   },
   "tc_server_count": {
-    "sql": "select count(*) from server where status = 0 and cloudType = 'TC';",
+    "sql": "select count(*) from server where status = 0 and cloud_type = 'TC';",
     "service": "bigtree"
   },
   "uc_server_count": {
-    "sql": "select count(*) from server where status = 0 and cloudType = 'UC';",
+    "sql": "select count(*) from server where status = 0 and cloud_type = 'UC';",
     "service": "bigtree"
   },
   "randA": {
-    "sql": "select count(*) from server where status = 0 and cloudType = 'UC';",
+    "sql": "select round(rand() * 100);",
     "service": "bigtree"
   },
   "randB": {
